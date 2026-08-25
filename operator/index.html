@@ -143,10 +143,10 @@
 
     .topics {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 0;
       border-top: 1px solid #34322e;
-      max-width: 760px;
+      max-width: 100%;
       margin-top: 45px;
     }
 
@@ -158,14 +158,22 @@
       color: #c8c2b8;
     }
 
-    .topic:nth-child(odd) {
-      padding-right: 25px;
-    }
+   .topic {
+  padding-left: 18px;
+  padding-right: 18px;
+}
 
-    .topic:nth-child(even) {
-      padding-left: 25px;
-      border-left: 1px solid #34322e;
-    }
+.topic:first-child {
+  padding-left: 0;
+}
+
+.topic + .topic {
+  border-left: 1px solid #34322e;
+}
+
+.topic:last-child {
+  padding-right: 0;
+}
 
     .endorsement {
       padding: 120px 0;
