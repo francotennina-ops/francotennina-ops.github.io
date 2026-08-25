@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Centerless Operator | Franco Tennina</title>
+
+  <meta
+    name="description"
+    content="The Centerless Operator: A Meta-Archetype for Consciousness Engineering. Franco Tennina. Forthcoming from IFF Books · Collective Ink in 2027."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #11110f;
+      color: #ece8df;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #a8a298;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 64px;
+      line-height: 0.98;
+      font-weight: 400;
+      letter-spacing: -2px;
+      margin: 0 0 25px;
+    }
+
+    .tagline {
+      font-size: 22px;
+      line-height: 1.4;
+      font-style: italic;
+      color: #c8c2b8;
+      max-width: 600px;
+      margin-bottom: 32px;
+    }
+
+    .author {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      letter-spacing: 1px;
+      margin-bottom: 35px;
+    }
+
+    .publication {
+      border-left: 1px solid #666158;
+      padding-left: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #aaa49a;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .publication strong {
+      color: #ece8df;
+      font-weight: 600;
+    }
+
+    .cover {
+      width: 100%;
+      display: block;
+      border-radius: 3px;
+      box-shadow: 0 25px 70px rgba(0,0,0,0.45);
+    }
+
+    .opening {
+      padding: 100px 0;
+      border-top: 1px solid #2d2c29;
+      border-bottom: 1px solid #2d2c29;
+    }
+
+    .opening p {
+      font-size: 36px;
+      line-height: 1.35;
+      max-width: 820px;
+      margin: 0;
+    }
+
+    section {
+      padding: 100px 0;
+    }
+
+    h2 {
+      font-size: 42px;
+      line-height: 1.1;
+      font-weight: 400;
+      margin: 0 0 35px;
+      letter-spacing: -1px;
+    }
+
+    .body-text {
+      max-width: 760px;
+      font-size: 20px;
+      color: #d0cbc2;
+    }
+
+    .body-text p {
+      margin: 0 0 25px;
+    }
+
+    .drawing {
+      border-top: 1px solid #2d2c29;
+    }
+
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      border-top: 1px solid #34322e;
+      max-width: 760px;
+      margin-top: 45px;
+    }
+
+    .topic {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      padding: 20px 0;
+      border-bottom: 1px solid #34322e;
+      color: #c8c2b8;
+    }
+
+    .topic:nth-child(odd) {
+      padding-right: 25px;
+    }
+
+    .topic:nth-child(even) {
+      padding-left: 25px;
+      border-left: 1px solid #34322e;
+    }
+
+    .endorsement {
+      padding: 120px 0;
+      border-top: 1px solid #2d2c29;
+      border-bottom: 1px solid #2d2c29;
+    }
+
+    blockquote {
+      margin: 0;
+      max-width: 850px;
+      font-size: 36px;
+      line-height: 1.4;
+      font-style: italic;
+      color: #f0ece4;
+    }
+
+    .quote-author {
+      margin-top: 35px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #aaa49a;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 0.7fr 1.3fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .about-label {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #a8a298;
+      padding-top: 10px;
+    }
+
+    .about-text {
+      font-size: 20px;
+      color: #d0cbc2;
+    }
+
+    .about-text p {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      border-top: 1px solid #2d2c29;
+      padding: 45px 0 60px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      color: #777269;
+    }
+
+    @media (max-width: 760px) {
+
+      .hero {
+        min-height: auto;
+        padding: 60px 0 70px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      .tagline {
+        font-size: 20px;
+      }
+
+      .cover {
+        max-width: 520px;
+        margin: 0 auto;
+      }
+
+      .opening {
+        padding: 75px 0;
+      }
+
+      .opening p {
+        font-size: 28px;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      h2 {
+        font-size: 35px;
+      }
+
+      .body-text,
+      .about-text {
+        font-size: 18px;
+      }
+
+      .topics {
+        grid-template-columns: 1fr;
+      }
+
+      .topic:nth-child(odd),
+      .topic:nth-child(even) {
+        padding-left: 0;
+        padding-right: 0;
+        border-left: none;
+      }
+
+      blockquote {
+        font-size: 28px;
+      }
+
+      .endorsement {
+        padding: 85px 0;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="container">
+
+      <div class="hero-grid">
+
+        <div>
+
+          <div class="eyebrow">
+            Forthcoming 2027 · IFF Books · Collective Ink
+          </div>
+
+          <h1>
+            The Centerless<br>
+            Operator
+          </h1>
+
+          <div class="tagline">
+            A Meta-Archetype for Consciousness Engineering
+          </div>
+
+          <div class="author">
+            Franco Tennina
+          </div>
+
+          <div class="publication">
+            <strong>Forthcoming 2027</strong><br>
+            IFF Books · Collective Ink
+          </div>
+
+        </div>
+
+        <div>
+          <img
+            src="cover.jpg"
+            alt="The Centerless Operator by Franco Tennina"
+            class="cover"
+          >
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <div class="opening">
+    <div class="container">
+      <p>
+        What becomes possible when action no longer depends on maintaining
+        a fixed sense of self?
+      </p>
+    </div>
+  </div>
+
+  <main>
+
+    <section>
+      <div class="container">
+
+        <h2>Beyond self-optimization</h2>
+
+        <div class="body-text">
+
+          <p>
+            Most approaches to personal development focus on improving what we do:
+            our habits, decisions, beliefs, and behaviors. The Centerless Operator
+            asks a different question: what if the structure from which action
+            emerges is itself generating the distortion?
+          </p>
+
+          <p>
+            The book explores what happens as rigid identification begins to loosen.
+            Perception becomes clearer, action less reactive, learning more adaptive,
+            and different modes of cognition and creativity can integrate with
+            greater fluidity.
+          </p>
+
+          <p>
+            The Centerless Operator is not a new identity to adopt. It is a
+            meta-archetype representing the capacity to operate when no single
+            psychological structure is allowed to become the center.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="drawing">
+      <div class="container">
+
+        <h2>Drawing from</h2>
+
+        <div class="topics">
+
+          <div class="topic">Philosophy of mind</div>
+          <div class="topic">Psychology</div>
+          <div class="topic">Non-duality</div>
+          <div class="topic">Hermeticism</div>
+          <div class="topic">Perceptual training</div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="endorsement">
+      <div class="container">
+
+        <blockquote>
+          “Interesting, well argued, and bringing a new angle: correcting the
+          state of the agent rather than the agent’s actions.”
+        </blockquote>
+
+        <div class="quote-author">
+          — Bernardo Kastrup
+        </div>
+
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+
+        <div class="about">
+
+          <div class="about-label">
+            About the author
+          </div>
+
+          <div class="about-text">
+
+            <p>
+              Franco Tennina is an Argentine physician specializing in endocrinology,
+              researcher, musician, and author. His work explores consciousness,
+              identity, and human experience across philosophy, science,
+              contemplative practice, and creative expression.
+            </p>
+
+            <p>
+              <em>The Centerless Operator</em> is his first book, forthcoming from
+              IFF Books in 2027.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Franco Tennina · The Centerless Operator
+    </div>
+  </footer>
+
+</body>
+</html>
