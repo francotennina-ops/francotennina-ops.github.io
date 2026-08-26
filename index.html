@@ -302,7 +302,53 @@
         width: 100%;
       }
     }
-  </style>
+  .hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  align-items: center;
+  gap: 70px;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+.hero-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-photo img {
+  width: 100%;
+  max-width: 430px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 28px;
+  box-shadow: 0 20px 60px rgba(40, 25, 35, 0.12);
+}@media (max-width: 760px) {
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-photo {
+    order: -1;
+  }
+
+  .hero-photo img {
+    max-width: 320px;
+    aspect-ratio: 1 / 1;
+    border-radius: 24px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+}</style>
 
   <script type="application/ld+json">
   {
@@ -326,7 +372,10 @@
 <body>
 
   <header class="hero">
-    <div class="container">
+  <div class="container">
+
+    <div class="hero-grid">
+
       <div class="hero-content">
 
         <div class="eyebrow">
@@ -364,9 +413,17 @@
         </div>
 
       </div>
-    </div>
-  </header>
 
+      <div class="hero-photo">
+        <img
+          src="fran.png"
+          alt="Dr. Franco Tennina, médico endocrinólogo">
+      </div>
+
+    </div>
+
+  </div>
+</header>
 
   <section class="services" id="consultas">
 
