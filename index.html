@@ -2,660 +2,151 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dr. Franco Tennina | Endocrinólogo en Belgrano y Liniers</title>
-  
-<meta name="description" content="Consulta de endocrinología para adultos con el Dr. Franco Tennina. Atención presencial en Belgrano y Liniers (CABA), y teleconsulta. Tiroides, metabolismo, salud ósea, hipófisis, suprarrenal y otras alteraciones hormonales.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franco Tennina | Endocrinología, música y conciencia</title>
+  <meta name="description" content="Franco Tennina: endocrinología, programa Hashimoto PNIE, música, videos sobre conciencia y The Centerless Operator.">
   <meta name="robots" content="index, follow">
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    :root {
-      --background: #f7f0e8;
-      --background-light: #fbf7f2;
-      --text: #21131f;
-      --secondary: #454b4d;
-      --line: #c9a88f;
-      --white: #ffffff;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background:
-        radial-gradient(circle at 20% 10%, rgba(255,255,255,.75), transparent 35%),
-        linear-gradient(135deg, #f9f3ec, #f2e8de);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .container {
-      width: min(1120px, 88%);
-      margin: auto;
-    }
-
-    /* HERO */
-
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      padding: 80px 0;
-    }
-
-    .hero-content {
-      max-width: 850px;
-    }
-
-    .eyebrow {
-      text-transform: uppercase;
-      letter-spacing: .2em;
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 25px;
-      color: #5e4a58;
-    }
-
-    h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(58px, 8vw, 105px);
-      font-weight: 400;
-      line-height: .96;
-      letter-spacing: -.035em;
-      margin-bottom: 28px;
-    }
-
-    .hero-subtitle {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(26px, 3vw, 40px);
-      font-style: italic;
-      color: var(--secondary);
-      margin-bottom: 28px;
-    }
-
-    .hero-description {
-      font-size: 20px;
-      max-width: 680px;
-      color: var(--secondary);
-      margin-bottom: 38px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .button {
-      display: inline-block;
-      text-decoration: none;
-      padding: 15px 25px;
-      border-radius: 999px;
-      font-weight: 600;
-      transition: all .2s ease;
-    }
-
-    .button-primary {
-      background: var(--text);
-      color: white;
-    }
-
-    .button-primary:hover {
-      transform: translateY(-2px);
-      opacity: .9;
-    }
-
-    .button-secondary {
-      border: 1px solid var(--text);
-      color: var(--text);
-    }
-
-    .button-secondary:hover {
-      background: rgba(255,255,255,.4);
-    }
-
-    /* GENERAL */
-
-    section {
-      padding: 95px 0;
-    }
-
-    .section-label {
-      text-transform: uppercase;
-      letter-spacing: .18em;
-      font-size: 12px;
-      font-weight: 700;
-      margin-bottom: 15px;
-      color: #6a5261;
-    }
-
-    h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(38px, 5vw, 62px);
-      font-weight: 400;
-      line-height: 1.05;
-      margin-bottom: 55px;
-    }
-
-    /* SERVICES */
-
-    .services {
-      border-top: 1px solid var(--line);
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0 70px;
-    }
-
-    .service {
-      padding: 32px 0;
-      border-bottom: 1px solid rgba(120, 95, 80, .35);
-    }
-
-    .service h3 {
-      font-size: 19px;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .service p {
-      color: var(--secondary);
-      font-size: 17px;
-    }
-
-    /* CREDENTIALS */
-
-    .credentials {
-      background: rgba(255,255,255,.27);
-      border-top: 1px solid rgba(120, 95, 80, .2);
-      border-bottom: 1px solid rgba(120, 95, 80, .2);
-    }
-
-    .credential-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 45px;
-    }
-
-    .credential {
-      padding-right: 25px;
-    }
-
-    .credential strong {
-      display: block;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 25px;
-      font-weight: 400;
-      margin-bottom: 8px;
-    }
-
-    .credential span {
-      color: var(--secondary);
-    }
-
-    /* HASHIMOTO */
-
-    .hashimoto-box {
-      border: 1px solid rgba(100,70,85,.25);
-      border-radius: 28px;
-      padding: 55px;
-      background: rgba(255,255,255,.32);
-    }
-
-    .hashimoto-box h2 {
-      margin-bottom: 18px;
-    }
-
-.hashimoto-box p {
-  max-width: 1000px;
-  color: var(--secondary);
-  font-size: 18px;
-  line-height: 1.55;
-  margin-bottom: 30px;
-}
-
-    /* CONTACT */
-
-    .contact {
-      text-align: center;
-      padding-top: 110px;
-      padding-bottom: 110px;
-    }
-
-    .contact h2 {
-      margin-bottom: 20px;
-    }
-
-    .contact-intro {
-      color: var(--secondary);
-      font-size: 19px;
-      margin-bottom: 35px;
-    }
-
-    .location {
-      margin-top: 45px;
-      font-size: 16px;
-      color: var(--secondary);
-    }
-
-    footer {
-      text-align: center;
-      border-top: 1px solid rgba(120,95,80,.25);
-      padding: 35px 20px;
-      color: #6c6569;
-      font-size: 14px;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 760px) {
-
-      .hero {
-        min-height: auto;
-        padding: 80px 0 65px;
-      }
-
-      h1 {
-        font-size: 58px;
-      }
-
-      .hero-description {
-        font-size: 18px;
-      }
-
-      section {
-        padding: 70px 0;
-      }
-
-      .services-grid,
-      .credential-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .credential {
-        padding: 20px 0;
-        border-bottom: 1px solid rgba(120,95,80,.25);
-      }
-
-      .hashimoto-box {
-        padding: 35px 25px;
-      }
-
-      .buttons {
-        flex-direction: column;
-      }
-
-      .button {
-        text-align: center;
-        width: 100%;
-      }
-    }
-  .hero-grid {
-  display: grid;
-  grid-template-columns: 1.15fr .85fr;
-  align-items: center;
-  gap: 70px;
-  width: 100%;
-}
-
-.hero-content {
-  max-width: 680px;
-}
-
-.hero-photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-photo img {
-  width: 100%;
-  max-width: 430px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 28px;
-  box-shadow: 0 20px 60px rgba(40, 25, 35, 0.12);
-}@media (max-width: 760px) {
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .hero-photo {
-    order: -1;
-  }
-
-  .hero-photo img {
-    max-width: 320px;
-    aspect-ratio: 1 / 1;
-    border-radius: 24px;
-  }
-
-  .hero-content {
-    max-width: 100%;
-  }
-}@media (min-width: 761px) {
-  h1 {
-    font-size: clamp(56px, 5vw, 78px);
-    white-space: nowrap;
-    letter-spacing: -0.04em;
-  }
-
-  .hero-grid {
-    grid-template-columns: 1.3fr .7fr;
-    gap: 55px;
-  }
-
-  .hero-photo img {
-    max-width: 400px;
-  }
-}</style>
-
+  <link rel="canonical" href="https://francotennina.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="Franco Tennina">
+  <meta property="og:description" content="Endocrinología · Hashimoto PNIE · Música y conciencia · The Centerless Operator">
+  <meta property="og:url" content="https://francotennina.com/">
+  <meta property="og:image" content="https://francotennina.com/fran.png">
+  <meta name="theme-color" content="#1b0b2a">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Physician",
-    "name": "Dr. Franco Tennina",
-    "medicalSpecialty": "Endocrinology",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Virrey Arredondo 2474 PB C",
-      "addressLocality": "Belgrano",
-      "addressRegion": "Ciudad Autónoma de Buenos Aires",
-      "addressCountry": "AR"
-    },
-    "telephone": "+54 11 4781-8746"
+    "@type": "Person",
+    "name": "Franco Tennina",
+    "url": "https://francotennina.com/",
+    "image": "https://francotennina.com/fran.png",
+    "description": "Médico endocrinólogo, músico y autor de The Centerless Operator.",
+    "sameAs": [
+      "https://www.instagram.com/frantennina/",
+      "https://www.youtube.com/@frantennina"
+    ]
   }
   </script>
-
-<link rel="canonical" href="https://francotennina.com/"></head>
-
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #13091e;
+      --panel: #1c0d2b;
+      --text: #f6f0f8;
+      --muted: #cdbfd4;
+      --line: rgba(239, 219, 247, .65);
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background:
+        radial-gradient(ellipse 65% 62% at 51% -8%, rgba(105, 36, 151, .54), transparent 83%),
+        radial-gradient(ellipse 58% 50% at 0% 95%, rgba(91, 29, 136, .23), transparent 75%),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 2px solid white; outline-offset: 5px; }
+    main { width: min(730px, calc(100% - 36px)); margin: 0 auto; padding: 88px 0 48px; }
+    .profile { display: flex; align-items: center; justify-content: center; gap: 28px; margin-bottom: 50px; }
+    .portrait {
+      display: block;
+      width: 112px;
+      height: 112px;
+      flex: 0 0 112px;
+      object-fit: cover;
+      object-position: center;
+      border: 2px solid rgba(248, 236, 253, .85);
+      border-radius: 50%;
+      background: #372043;
+    }
+    h1 { margin: 0; font-size: clamp(31px, 5vw, 49px); font-weight: 450; letter-spacing: -.055em; line-height: 1.1; }
+    .socials { display: flex; align-items: center; gap: 17px; margin-top: 16px; }
+    .socials a { color: #e9dfee; opacity: .85; line-height: 0; transition: opacity .2s ease, transform .2s ease; }
+    .socials a:hover { opacity: 1; transform: translateY(-2px); }
+    .socials svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .socials .youtube-icon { fill: currentColor; stroke: none; }
+    .socials .youtube-play { fill: var(--bg); }
+    .links { display: grid; gap: 14px; }
+    .link-card {
+      min-height: 89px;
+      border: 1px solid var(--line);
+      border-radius: 23px;
+      padding: 18px 28px;
+      background: linear-gradient(115deg, rgba(43, 16, 64, .86), rgba(25, 10, 38, .88));
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 18px;
+      transition: background .22s ease, border-color .22s ease, transform .22s ease;
+    }
+    .link-card:hover { background: #331746; border-color: white; transform: translateY(-2px); }
+    .link-title { display: block; font-size: 19px; font-weight: 490; line-height: 1.25; letter-spacing: -.025em; }
+    .link-subtitle { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; line-height: 1.35; }
+    .arrow { align-self: center; color: #dcc7e5; font-size: 20px; font-weight: 300; transition: transform .22s ease; }
+    .link-card:hover .arrow { transform: translate(2px, -2px); }
+    footer { margin-top: 49px; text-align: center; font-size: 11px; letter-spacing: .06em; color: #af9bb9; }
+    @media (max-width: 580px) {
+      main { padding-top: 58px; }
+      .profile { gap: 17px; margin-bottom: 43px; }
+      .portrait { width: 88px; height: 88px; flex-basis: 88px; }
+      h1 { font-size: clamp(26px, 7vw, 38px); }
+      .socials { margin-top: 12px; }
+      .link-card { min-height: 81px; border-radius: 19px; padding: 17px 20px; }
+      .link-title { font-size: 17px; }
+      .link-subtitle { font-size: 12px; }
+    }
+    @media (max-width: 380px) {
+      .profile { flex-direction: column; text-align: center; }
+      .socials { justify-content: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .socials a, .link-card, .arrow { transition: none; }
+      .socials a:hover, .link-card:hover, .link-card:hover .arrow { transform: none; }
+    }
+  </style>
+</head>
 <body>
-
-  <header class="hero">
-  <div class="container">
-
-    <div class="hero-grid">
-
-      <div class="hero-content">
-
-        <h1>
-          Dr. Franco Tennina
-        </h1>
-
-        <div class="hero-subtitle">
-          Médico endocrinólogo
-        </div>
-
-        <p class="hero-description">
-          Atención presencial en Belgrano y Liniers (CABA), y teleconsultas en todo el país.
-        </p>
-
-        <div class="buttons">
-  <a
-    class="button button-primary"
-    href="https://wa.me/5491160064188"
-    target="_blank">
-    Turnos Belgrano
-  </a>
-
-  <a
-    class="button button-primary"
-    href="https://wa.me/5491164551615?text=Hola%2C%20quisiera%20solicitar%20un%20turno%20en%20Liniers"
-    target="_blank">
-    Turnos Liniers
-  </a>
-     <a
-  class="button button-secondary"
-  href="https://wa.me/5491164551615?text=Hola%2C%20quisiera%20solicitar%20una%20teleconsulta"
-  target="_blank">
-  Teleconsulta
-</a>     
-</div>
-<p style="margin-top: 18px; font-size: 15px;">
-  <a href="https://share.google/diW3qcsQhDOQdCuM8"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">
-    Ver opiniones en Google
-  </a>
-</p>
+  <main>
+    <header class="profile">
+      <img class="portrait" src="https://francotennina.com/fran.png" alt="Franco Tennina" width="112" height="112">
+      <div>
+        <h1>Franco Tennina</h1>
+        <nav class="socials" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/frantennina/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Franco Tennina">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.6" r=".8" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@frantennina" target="_blank" rel="noopener noreferrer" aria-label="YouTube de Franco Tennina">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect class="youtube-icon" x="1.5" y="4.5" width="21" height="15" rx="4"/><path class="youtube-play" d="M10 8.3v7.4l6-3.7z"/></svg>
+          </a>
+        </nav>
       </div>
+    </header>
 
-      <div class="hero-photo">
-        <img
-          src="fran.png"
-          alt="Dr. Franco Tennina, médico endocrinólogo">
-      </div>
+    <nav class="links" aria-label="Proyectos y servicios">
+      <a class="link-card" href="/endocrinologia/">
+        <span><span class="link-title">Endocrinología</span><span class="link-subtitle">Consultorios y turnos</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link-card" href="/hashimoto/">
+        <span><span class="link-title">Hashimoto · PNIE</span><span class="link-subtitle">Programa clínico de 6 meses para síntomas persistentes</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link-card" href="/operator/">
+        <span><span class="link-title">The Centerless Operator</span><span class="link-subtitle">IFF Books · 2027</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link-card" href="https://www.youtube.com/@frantennina" target="_blank" rel="noopener noreferrer">
+        <span><span class="link-title">YouTube</span><span class="link-subtitle">Música · Filosofía de la conciencia</span></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </nav>
 
-    </div>
-
-  </div>
-</header>
-
-  <section class="services" id="consultas">
-
-    <div class="container">
-
-
-      <h2>Endocrinología</h2>
-
-      <div class="services-grid">
-
-     <div class="service">
-  <h3>Tiroides</h3>
-  <p>
-  Hipotiroidismo · Tiroiditis de Hashimoto · Hipertiroidismo ·
-  Nódulos tiroideos · Cáncer de tiroides · Seguimiento posquirúrgico
-</p>
-
-  <p style="margin-top: 18px;">
-    <strong>En Tiroiditis de Hashimoto:</strong> Evaluación individualizada integrando síntomas, laboratorio, tratamiento y evolución en el tiempo, con estudio de otras posibles causas de síntomas persistentes.
-  </p>
-</div>
-
-       <div class="service">
-  <h3>Diabetes, obesidad y metabolismo</h3>
-  <p>
-    Diabetes · Prediabetes · Sobrepeso y obesidad · Alteraciones del metabolismo
-  </p>
-
-  <p style="margin-top: 22px;">
-  <strong>En sobrepeso y obesidad:</strong>
-  Evaluación de causas y comorbilidades.
-  Tratamientos con GLP-1 como semaglutida (Ozempic, Wegovy),
-  liraglutida, tirzepatida (Mounjaro) y otros. 
-</p>
-</div>
-
-        <div class="service">
-          <h3>Salud ósea y calcio</h3>
-          <p>
-            Osteopenia · Osteoporosis · Alteraciones del calcio
-          </p>
-        </div>
-
-        <div class="service">
-          <h3>Hipófisis</h3>
-          <p>
-            Alteraciones de prolactina · Patología hipofisaria
-          </p>
-        </div>
-
-        <div class="service">
-          <h3>Suprarrenal</h3>
-          <p>
-            Alteraciones del cortisol · Nódulos suprarrenales
-          </p>
-        </div>
-
-        <div class="service">
-            <h3>Otras alteraciones hormonales</h3>
-  <p>
-    Hipogonadismo · Alteraciones de testosterona · Menopausia ·
-    Alteraciones del ciclo menstrual
-  </p>
-</div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <section class="credentials">
-
-    <div class="container">
-
-
-      <h2>
-        Trayectoria profesional
-      </h2>
-
-      <div class="credential-grid">
-
-        <div class="credential">
-          <strong>Universidad de Buenos Aires</strong>
-          <span>Médico</span>
-        </div>
-
-        <div class="credential">
-          <strong>Hospital Ramos Mejía</strong>
-          <span>Residencia de Endocrinología</span>
-        </div>
-
-        <div class="credential">
-          <strong>SAEM</strong>
-          <span>Departamento de Psiconeuroendocrinología</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <section>
-
-    <div class="container">
-
-      <div class="hashimoto-box">
-
-       
-        <h2>
-          Tiroiditis de Hashimoto y síntomas persistentes
-        </h2>
-
-        <p>
-          Programa clínico de 6 meses para personas con tiroiditis de Hashimoto hormonalmente compensada que continúan con síntomas persistentes. 
-          Incluye seguimiento endocrinológico y un abordaje complementario centrado en regulación del estrés y práctica de mindfulness, desde una perspectiva psiconeuroinmunoendocrinológica (PNIE).
-        </p>
-
-        <a
-          class="button button-secondary"
-          href="/hashimoto/">
-          Conocer el programa
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <section class="contact">
-
-    <div class="container">
-
-      <div class="section-label">
-      </div>
-
-      <h2>
-        Sedes y turnos
-      </h2>
-
-      
-<div class="location">
-  <strong style="display:block; font-size:20px; color:var(--text); margin-bottom:8px;">
-    BELGRANO
-  </strong>
-
-  Virrey Arredondo 2474 PB C<br>
-  Ciudad Autónoma de Buenos Aires<br><br>
-
-  <strong>Atención particular y por coberturas</strong><br>
-  Jerárquicos Salud · OSOCNA · Aqualis · Salud Central · Centro Médico Pueyrredón
-</div>
-
-<div class="buttons" style="justify-content:center; margin-top:25px;">
-  <a
-    class="button button-primary"
-    href="https://wa.me/5491160064188"
-    target="_blank">
-    Turnos Belgrano por WhatsApp
-  </a>
-
-    
-</div>
-
-<div class="location" style="margin-top:65px;">
-  <strong style="display:block; font-size:20px; color:var(--text); margin-bottom:8px;">
-    LINIERS
-  </strong>
-
-  Cosquín 10, 18° D<br>
-  Ciudad Autónoma de Buenos Aires<br><br>
-
-  <strong>Atención particular</strong>
-<div class="buttons" style="justify-content:center; margin-top:25px;">
-  <a
-    class="button button-primary"
-href="https://wa.me/5491164551615?text=Hola%2C%20quisiera%20solicitar%20un%20turno%20en%20Liniers"    target="_blank">
-    Turnos Liniers por WhatsApp
-  </a>
-</div>
-
-    </div>
-<div class="location" style="margin-top:65px;">
-  <strong style="display:block; font-size:20px; color:var(--text); margin-bottom:8px;">
-    TELECONSULTAS
-  </strong>
-
-  Atención online en todo el país
-
-  <div class="buttons" style="justify-content:center; margin-top:25px;">
-    <a
-      class="button button-primary"
-      href="https://wa.me/5491164551615?text=Hola%2C%20quisiera%20solicitar%20una%20teleconsulta"
-      target="_blank">
-      Solicitar teleconsulta
-    </a>
-  </div>
-</div>
-  </section>
-
-
-  <footer>
-    Dr. Franco Tennina · Médico endocrinólogo
-  </footer>
-
+    <footer>© 2026 Franco Tennina</footer>
+  </main>
 </body>
 </html>
