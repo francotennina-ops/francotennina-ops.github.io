@@ -71,7 +71,30 @@
     .socials svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
     .socials .youtube-icon { fill: currentColor; stroke: none; }
     .socials .youtube-play { fill: var(--bg); }
-    .links { display: grid; gap: 14px; }
+
+/* INTRODUCCIÓN PERSONAL */
+.intro {
+  max-width: 680px;
+  margin: -12px auto 38px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.intro p {
+  margin: 0 0 15px;
+}
+
+.intro p:first-child {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
+}
     .link-card {
       min-height: 89px;
       border: 1px solid var(--line);
@@ -127,6 +150,37 @@
       </div>
     </header>
 
+<section class="intro" aria-label="Sobre mi trabajo">
+
+  <p>
+    Soy Franco Tennina, médico endocrinólogo, músico
+    y autor en el campo de la filosofía de la conciencia.
+  </p>
+
+  <p>
+    Como endocrinólogo, además de mi práctica clínica general,
+    tengo especial interés en la psiconeuroinmunoendocrinología
+    (PNIE) y en la evaluación de síntomas persistentes
+    asociados a la tiroiditis de Hashimoto.
+  </p>
+
+  <p>
+    En el ámbito filosófico, desarrollo un proyecto de
+    investigación y divulgación centrado en la naturaleza
+    de la conciencia, la identidad y la experiencia no dual.
+    Este trabajo comprende mi libro <em>The Centerless Operator</em>,
+    cuya publicación está prevista para 2027 por IFF Books,
+    artículos académicos en desarrollo y revisión editorial,
+    y la serie audiovisual <em>El misterio de la conciencia</em>.
+  </p>
+
+  <p>
+    También busco expresar estas ideas a través de la
+    música en mi EP <em>Viaje al Fondo</em>.
+  </p>
+
+</section>
+
     <nav class="links" aria-label="Proyectos y servicios">
       <a class="link-card" href="/endocrinologia/">
         <span><span class="link-title">Endocrinología</span><span class="link-subtitle">Consultorios y turnos</span></span>
@@ -141,7 +195,7 @@
         <span class="arrow" aria-hidden="true">↗</span>
       </a>
       <a class="link-card" href="https://www.youtube.com/@frantennina" target="_blank" rel="noopener noreferrer">
-        <span><span class="link-title">YouTube</span><span class="link-subtitle">Música · Filosofía de la conciencia</span></span>
+        <span><span class="link-title">YouTube</span><span class="link-subtitle">Viaje al Fondo · El Misterio de la Conciencia</span></span>
         <span class="arrow" aria-hidden="true">↗</span>
       </a>
     </nav>
