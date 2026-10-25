@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -72,29 +73,30 @@
     .socials .youtube-icon { fill: currentColor; stroke: none; }
     .socials .youtube-play { fill: var(--bg); }
 
-/* INTRODUCCIÓN PERSONAL */
-.intro {
-  max-width: 680px;
-  margin: -12px auto 38px;
-  color: var(--muted);
-  font-size: 15px;
-  line-height: 1.7;
-  text-align: left;
-}
+    /* INTRODUCCIÓN PERSONAL */
+    .intro {
+      max-width: 680px;
+      margin: -12px auto 38px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      text-align: left;
+    }
 
-.intro p {
-  margin: 0 0 15px;
-}
+    .intro p {
+      margin: 0 0 15px;
+    }
 
-.intro p:first-child {
-  color: var(--text);
-  font-size: 16px;
-  font-weight: 500;
-}
+    .intro p:first-child {
+      color: var(--text);
+      font-size: 16px;
+      font-weight: 500;
+    }
 
-.intro p:last-child {
-  margin-bottom: 0;
-}
+    .intro p:last-child {
+      margin-bottom: 0;
+    }
+
     .link-card {
       min-height: 89px;
       border: 1px solid var(--line);
@@ -107,6 +109,11 @@
       gap: 18px;
       transition: background .22s ease, border-color .22s ease, transform .22s ease;
     }
+
+    .link-card + .link-card {
+      margin-top: 12px;
+    }
+
     .link-card:hover { background: #331746; border-color: white; transform: translateY(-2px); }
     .link-title { display: block; font-size: 19px; font-weight: 490; line-height: 1.25; letter-spacing: -.025em; }
     .link-subtitle { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; line-height: 1.35; }
