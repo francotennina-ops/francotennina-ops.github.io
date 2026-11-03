@@ -1,19 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="canonical" href="https://francotennina.com/hashimoto/">
 
   <title>Hashimoto y síntomas persistentes | Dr. Franco Tennina</title>
-  <meta name="description" content="Consulta especializada para síntomas persistentes en tiroiditis de Hashimoto. Evaluación individualizada y, cuando corresponde, abordaje complementario.">
+
+  <meta name="description" content="Consulta especializada en tiroiditis de Hashimoto y síntomas persistentes. Evaluación hormonal, autoinmune, nutricional y psicofisiológica con seguimiento individualizado.">
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://francotennina.com/hashimoto/">
   <meta property="og:title" content="Hashimoto y síntomas persistentes | Dr. Franco Tennina">
-  <meta property="og:description" content="Consulta especializada con evaluación individualizada. El programa PNIE de seis meses es una opción complementaria para casos seleccionados.">
+  <meta property="og:description" content="Evaluación endocrinológica especializada de síntomas persistentes en Hashimoto. Identificación de factores modificables, intervenciones individualizadas y seguimiento clínico.">
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -64,17 +74,17 @@
       border-radius: 8px;
       font-weight: 700;
       margin: 10px 0;
+      text-align: center;
+      transition: opacity 0.2s ease;
     }
 
-    .button:hover { opacity: 0.88; }
+    .button:hover {
+      opacity: 0.88;
+    }
 
-    .hero-image {
-      width: 100%;
-      max-height: 380px;
-      object-fit: cover;
-      border-radius: 18px;
-      margin: 16px 0 20px;
-      display: block;
+    .button:focus-visible {
+      outline: 3px solid #777;
+      outline-offset: 4px;
     }
 
     section {
@@ -91,24 +101,63 @@
       margin-bottom: 20px;
     }
 
-    p { margin: 0 0 18px; }
-    p:last-child { margin-bottom: 0; }
+    h3 {
+      font-size: 20px;
+      line-height: 1.35;
+      margin-top: 25px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
 
     ul {
       padding-left: 22px;
+      margin-top: 12px;
       margin-bottom: 18px;
     }
 
-    li { margin-bottom: 12px; }
+    li {
+      margin-bottom: 14px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
 
     .note {
       color: #555;
       font-size: 15px;
     }
 
+    .section-intro {
+      color: #444;
+      margin-bottom: 24px;
+    }
+
+    .section-cta {
+      margin-top: 25px;
+      text-align: center;
+    }
+
     .cta {
       text-align: center;
       padding: 45px 30px;
+    }
+
+    .cta h2 {
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      max-width: 570px;
+      margin: 0 auto 18px;
+      color: #555;
     }
 
     footer {
@@ -119,119 +168,544 @@
     }
 
     @media (max-width: 600px) {
-      .hero { padding-top: 42px; }
-      h1 { font-size: 33px; }
-      .subtitle { font-size: 18px; }
-      section { padding: 27px 22px; }
+      .hero {
+        padding-top: 42px;
+      }
+
+      h1 {
+        font-size: 33px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      h3 {
+        font-size: 19px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 27px 22px;
+      }
+
+      .cta {
+        padding: 35px 22px;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <header class="hero">
     <div class="container">
-      <div class="eyebrow">CONSULTA ESPECIALIZADA</div>
-      <h1>Tiroiditis de Hashimoto y síntomas persistentes</h1>
 
-      <a class="button" href="https://wa.me/5491164551615?text=Hola%2C%20quisiera%20solicitar%20una%20consulta%20por%20Hashimoto%20y%20s%C3%ADntomas%20persistentes." target="_blank" rel="noopener noreferrer">SOLICITAR TURNO</a>
+      <div class="eyebrow">
+        CONSULTA ENDOCRINOLÓGICA ESPECIALIZADA
+      </div>
+
+      <h1>
+        Tiroiditis de Hashimoto y síntomas persistentes
+      </h1>
+
+      <p class="subtitle">
+        ¿Tenés Hashimoto y seguís con cansancio, niebla mental
+        o sueño no reparador, incluso cuando tus análisis
+        tiroideos están en rango?
+      </p>
+
+      <a
+        class="button"
+        href="https://wa.me/5491164551615?text=Hola%2C%20quisiera%20solicitar%20una%20consulta%20por%20Hashimoto%20y%20s%C3%ADntomas%20persistentes."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        SOLICITAR TURNO
+      </a>
 
     </div>
   </header>
 
   <main class="container">
-    <section>
-      <p>
 
-En personas con tiroiditis de Hashimoto, pueden persistir síntomas como fatiga, dificultades de concentración o sueño no reparador aun cuando la función tiroidea se encuentra en rango, ya sea de forma espontánea o bajo tratamiento con levotiroxina.
-      <p>
+    <!-- INTRODUCCIÓN -->
 
-Los síntomas persistentes no conforman necesariamente un cuadro único. Según una hipótesis en desarrollo, podrían reflejar distintas combinaciones de factores tiroideos y extratiroideos, con perfiles parcialmente superpuestos. La evaluación busca estimar qué factores pueden tener mayor peso en cada caso, sin presuponer una causa única.
+    <section id="introduccion">
+
+      <h2>
+        Cuando los análisis están en rango,
+        pero los síntomas continúan
+      </h2>
+
+      <p>
+        En personas con tiroiditis de Hashimoto pueden
+        persistir síntomas como fatiga, dificultades de
+        concentración, sueño no reparador o deterioro de
+        la calidad de vida, aun cuando la función tiroidea
+        se encuentra en rango, ya sea espontáneamente o
+        bajo tratamiento con levotiroxina.
+      </p>
+
+      <p>
+        Estos síntomas no tienen necesariamente una única
+        explicación. Pueden relacionarse con factores
+        hormonales, enfermedades coexistentes, alteraciones
+        nutricionales, sueño, estrés y otros procesos
+        que pueden superponerse.
+      </p>
+
+      <p>
+        La consulta especializada busca identificar qué
+        factores podrían estar contribuyendo en cada caso
+        y cuáles son potencialmente modificables, mediante
+        una evaluación endocrinológica individualizada
+        y basada en la evidencia disponible.
+      </p>
+
     </section>
+
+
+    <!-- EVALUACIÓN CLÍNICA -->
 
     <section id="evaluacion">
-<h2>¿Qué se evalúa en la consulta?</h2>
 
-<ul>
-  <li>
-    <strong>Trayectoria tiroidea individual:</strong> los valores actuales y
-    previos de función tiroidea, cuando están disponibles, y su relación
-    temporal con la aparición o evolución de los síntomas.
-  </li>
+      <h2>¿Qué se evalúa en la consulta?</h2>
 
-  <li>
-    <strong>Contexto hormonal y tratamiento:</strong> si la función en rango
-    es espontánea o se alcanzó con levotiroxina. En quienes reciben tratamiento,
-    se revisan la dosis, la forma de administración, las posibles interferencias
-    en su absorción y la respuesta clínica.
-  </li>
+      <p class="section-intro">
+        La evaluación integra distintas dimensiones clínicas.
+        No todas requieren los mismos estudios ni las mismas
+        intervenciones: su relevancia depende de la historia
+        y los hallazgos de cada paciente.
+      </p>
 
-  <li>
-    <strong>Contexto autoinmune-inflamatorio:</strong> antecedentes, anticuerpos,
-    ecografía y enfermedades autoinmunes coexistentes, interpretados en conjunto
-    y no como prueba aislada de la causa de los síntomas.
-  </li>
+      <ul>
 
-  <li>
-    <strong>Condiciones coexistentes:</strong> problemas hematológicos,
-    metabólicos, del sueño, efectos de medicamentos u otras causas que la
-    historia clínica indique investigar.
-  </li>
+        <li>
+          <strong>Trayectoria tiroidea y tratamiento hormonal:</strong>
+          se revisan los valores actuales e históricos de
+          función tiroidea y su relación temporal con los
+          síntomas. En quienes reciben levotiroxina, se
+          evalúan la dosis, la administración, las posibles
+          interferencias en su absorción y la respuesta
+          clínica, considerando si existe alguna indicación
+          de optimizar el tratamiento.
+        </li>
 
-  <li>
-    <strong>Perfil de síntomas y factores psicofisiológicos:</strong> qué lugar
-    ocupan la fatiga, la cognición, el sueño, el ánimo y la calidad de vida,
-    junto con el estrés y la actividad cotidiana, sin reducir todo el cuadro
-    a una única puntuación.
-  </li>
-</ul>
+        <li>
+          <strong>Autoinmunidad y enfermedades asociadas:</strong>
+          se consideran los anticuerpos tiroideos, la
+          ecografía, los antecedentes y la posible
+          coexistencia de otras enfermedades autoinmunes,
+          como la enfermedad celíaca. Estos hallazgos se
+          interpretan en conjunto, sin asumir que los
+          títulos de anticuerpos o los cambios ecográficos
+          expliquen por sí solos los síntomas sistémicos.
+        </li>
+
+        <li>
+          <strong>Alimentación, nutrición y metabolismo:</strong>
+          se evalúan el patrón alimentario, posibles
+          deficiencias de hierro, vitamina B12 y otros
+          nutrientes, así como alteraciones metabólicas
+          o digestivas cuando la historia clínica lo
+          justifica. Se consideran las distintas
+          intervenciones nutricionales estudiadas en
+          Hashimoto, incluyendo el patrón mediterráneo,
+          evitando restricciones alimentarias innecesarias.
+        </li>
+
+        <li>
+          <strong>Sueño, actividad física y estrés:</strong>
+          se exploran la calidad del descanso, los niveles
+          de actividad física, el estrés percibido y otros
+          factores psicofisiológicos que pueden influir
+          sobre la energía, la concentración y el bienestar.
+          Esta evaluación no presupone que el estrés sea
+          la causa de Hashimoto ni de todos los síntomas.
+        </li>
+
+        <li>
+          <strong>Síntomas y calidad de vida:</strong>
+          además de los resultados de laboratorio, se
+          evalúa cómo los síntomas afectan la vida cotidiana.
+          Cuando corresponde, se utilizan cuestionarios
+          estandarizados, como ThyPRO para calidad de vida
+          relacionada con enfermedades tiroideas y la
+          Escala de Estrés Percibido (PSS).
+        </li>
+
+      </ul>
 
     </section>
 
-    <section>
-      <h2>Del perfil a las decisiones clínicas</h2>
+
+    <!-- DECISIONES CLÍNICAS -->
+
+    <section id="intervenciones">
+
+      <h2>De la evaluación a un plan individualizado</h2>
+
       <p>
-        Según los hallazgos, se considera si corresponde revisar el tratamiento tiroideo, investigar condiciones coexistentes o abordar factores psicofisiológicos. Las decisiones se individualizan y se reevalúan durante el seguimiento.
+        El objetivo no es aplicar un mismo tratamiento
+        a todas las personas con Hashimoto, sino identificar
+        factores potencialmente modificables y seleccionar
+        las intervenciones más apropiadas según cada
+        situación clínica.
+      </p>
+
+      <p>
+        Dependiendo de los hallazgos, el plan puede incluir:
+      </p>
+
+      <ul>
+
+        <li>
+          <strong>Tratamiento tiroideo:</strong>
+          revisión u optimización de la sustitución hormonal
+          cuando existe una indicación clínica.
+        </li>
+
+        <li>
+          <strong>Condiciones coexistentes:</strong>
+          diagnóstico y tratamiento de deficiencias
+          nutricionales, enfermedades autoinmunes asociadas
+          u otros problemas que puedan contribuir
+          a los síntomas.
+        </li>
+
+        <li>
+          <strong>Alimentación:</strong>
+          recomendaciones nutricionales individualizadas,
+          con especial consideración del patrón mediterráneo
+          y la evidencia disponible sobre otras dietas
+          estudiadas en Hashimoto.
+        </li>
+
+        <li>
+          <strong>Hábitos y actividad física:</strong>
+          intervenciones sobre el sueño, el movimiento
+          y otros aspectos del estilo de vida que
+          puedan influir en el bienestar.
+        </li>
+
+        <li>
+          <strong>Estrés y regulación psicofisiológica:</strong>
+          estrategias de manejo del estrés, incluyendo
+          mindfulness o acompañamiento psicológico
+          cuando resulten apropiados.
+        </li>
+
+      </ul>
+
+      <p>
+        No todas las personas necesitan todas estas
+        intervenciones. Algunas pueden beneficiarse
+        de medidas específicas, mientras que en otras
+        es necesario ampliar la evaluación o reconsiderar
+        las hipótesis iniciales.
+      </p>
+
+      <p class="note">
+        El enfoque no presupone que los síntomas persistentes
+        sean consecuencia de inflamación sistémica ni propone
+        dietas, suplementos o modificaciones hormonales
+        sin una justificación clínica.
       </p>
 
     </section>
+
+
+    <!-- SEGUIMIENTO -->
+
+    <section id="seguimiento">
+
+      <h2>Seguimiento y evaluación de resultados</h2>
+
+      <p>
+        La mejoría clínica no siempre se refleja únicamente
+        en los valores de TSH o de anticuerpos tiroideos.
+        Por eso, cuando corresponde, el seguimiento también
+        considera la evolución de la fatiga, la concentración,
+        el sueño, el bienestar y la calidad de vida.
+      </p>
+
+      <p>
+        El uso de cuestionarios estandarizados, como ThyPRO
+        y PSS, puede ayudar a registrar los cambios a lo
+        largo del tiempo, junto con la evolución clínica
+        y los estudios pertinentes.
+      </p>
+
+      <p>
+        El objetivo es evaluar la respuesta a las
+        intervenciones y revisar las decisiones cuando
+        los resultados no son los esperados, sin atribuir
+        automáticamente una mejoría a un mecanismo
+        hormonal o inmunológico determinado.
+      </p>
+
+      <div class="section-cta">
+
+        <a
+          class="button"
+          href="https://wa.me/5491164551615?text=Hola%2C%20quisiera%20solicitar%20una%20consulta%20por%20Hashimoto%20y%20s%C3%ADntomas%20persistentes."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SOLICITAR TURNO
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROGRAMA PNIE -->
 
     <section id="programa">
+
       <h2>Programa complementario de regulación PNIE</h2>
+
       <p>
-Cuando la evaluación clínica sugiere que factores psicofisiológicos podrían estar contribuyendo a los síntomas, puede considerarse un programa complementario de seis meses. Desde una perspectiva psiconeuroinmunoendocrinológica (PNIE), integra seguimiento endocrinológico y práctica personalizada de mindfulness.      </p>
-      <p>
-La práctica no se reduce a entregar instrucciones generales. Comienza con una sesión individual en la que se enseñan y ensayan distintas consignas, ajustándolas en tiempo real según la experiencia del paciente. El foco de atención, el grado de esfuerzo y la forma de relacionarse con pensamientos y sensaciones pueden modificarse durante la sesión, hasta definir una modalidad adecuada para continuar en casa.      </p>
-      <p>
-A partir de allí se establece una práctica diaria con registro. El seguimiento clínico y bioquímico a los tres y seis meses permite reevaluar síntomas, estrés percibido y adherencia mediante cuestionarios estandarizados.
+        Cuando la evaluación clínica sugiere que factores
+        psicofisiológicos podrían estar contribuyendo
+        a los síntomas, puede considerarse un programa
+        complementario de seis meses.
       </p>
+
       <p>
-El programa requiere una participación activa. Complementa, pero no reemplaza, el tratamiento endocrinológico habitual; no implica modificar la levotiroxina sin indicación médica ni se propone como tratamiento de la autoinmunidad tiroidea.      </p>
-      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfhERpPbucb4tTE1eNKC5ncecXCVz4FBVp40QEtY7aURuSFQw/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">CONSULTAR POR EL PROGRAMA</a>
+        Desde una perspectiva psiconeuroinmunoendocrinológica
+        (PNIE), integra seguimiento endocrinológico y
+        práctica personalizada de mindfulness, con el
+        objetivo de favorecer la regulación del estrés
+        y evaluar su relación con la evolución clínica.
+      </p>
+
+      <h3>¿Cómo se desarrolla?</h3>
+
+      <p>
+        La práctica no se reduce a entregar instrucciones
+        generales. Comienza con una sesión individual en
+        la que se enseñan y ensayan distintas consignas
+        de meditación, ajustándolas en tiempo real según
+        la experiencia del paciente.
+      </p>
+
+      <p>
+        El foco de atención, el grado de esfuerzo y la
+        forma de relacionarse con pensamientos y sensaciones
+        pueden modificarse durante la sesión, hasta
+        definir una modalidad adecuada para continuar
+        en casa.
+      </p>
+
+      <p>
+        A partir de allí se establece una práctica
+        diaria con registro. El seguimiento clínico
+        y bioquímico a los tres y seis meses permite
+        reevaluar los síntomas, el estrés percibido
+        y la adherencia mediante cuestionarios
+        estandarizados.
+      </p>
+
+      <p>
+        El programa requiere una participación activa.
+        Es una opción complementaria para casos
+        seleccionados y no constituye un requisito
+        para acceder a la consulta especializada.
+      </p>
+
+      <p class="note">
+        El mindfulness no reemplaza el tratamiento
+        endocrinológico habitual, no implica modificar
+        la levotiroxina sin indicación médica y no se
+        propone como un tratamiento demostrado de
+        la autoinmunidad tiroidea.
+      </p>
+
+      <a
+        class="button"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfhERpPbucb4tTE1eNKC5ncecXCVz4FBVp40QEtY7aURuSFQw/viewform?usp=publish-editor"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CONSULTAR POR EL PROGRAMA
+      </a>
+
     </section>
 
-    <section>
+
+    <!-- PROFESIONAL -->
+
+    <section id="profesional">
+
       <h2>Sobre el profesional</h2>
-      <p><strong>Dr. Franco Tennina</strong><br>Médico especialista en Endocrinología</p>
+
+      <p>
+        <strong>Dr. Franco Tennina</strong><br>
+        Médico especialista en Endocrinología
+      </p>
+
       <ul>
-        <li>Formación y residencia en Endocrinología en el Hospital General de Agudos J. M. Ramos Mejía.</li>
-        <li>Experiencia asistencial en el Hospital Alemán de Buenos Aires.</li>
-        <li>Integrante del Departamento de Psiconeuroinmunoendocrinología (PNIE) de la Sociedad Argentina de Endocrinología y Metabolismo (SAEM).</li>
-        <li>Desarrollo de una línea clínica y académica centrada en estrés psicológico crónico, regulación neuroendocrina y enfermedad endocrinológica.</li>
+
+        <li>
+          Formación y residencia en Endocrinología
+          en el Hospital General de Agudos
+          J. M. Ramos Mejía.
+        </li>
+
+        <li>
+          Experiencia asistencial en el Hospital
+          Alemán de Buenos Aires.
+        </li>
+
+        <li>
+          Integrante del Departamento de
+          Psiconeuroinmunoendocrinología (PNIE)
+          de la Sociedad Argentina de Endocrinología
+          y Metabolismo (SAEM).
+        </li>
+
+        <li>
+          Desarrollo de una línea clínica y académica
+          centrada en estrés psicológico crónico,
+          regulación neuroendocrina y enfermedad
+          endocrinológica.
+        </li>
+
       </ul>
+
     </section>
 
-    <section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+
+    <section id="preguntas">
+
       <h2>Preguntas frecuentes</h2>
-      <p><strong>¿La consulta implica ingresar al programa?</strong><br>No. El programa es solo una de las opciones posibles y se considera después de la evaluación clínica.</p>
-      <p><strong>¿Tengo que suspender o modificar la levotiroxina?</strong><br>No. Cualquier cambio de medicación se realiza únicamente cuando existe una indicación médica individual.</p>
-      <p><strong>¿Necesito experiencia previa en mindfulness para participar en el programa?</strong><br>No, si el programa resulta adecuado para vos. La práctica se enseña de manera progresiva.</p>
+
+      <h3>
+        ¿Puedo consultar si mis análisis tiroideos
+        están en rango?
+      </h3>
+
+      <p>
+        Sí. La consulta está especialmente orientada
+        a personas con Hashimoto que continúan con
+        síntomas, incluso cuando la función tiroidea
+        se encuentra dentro de los valores de referencia.
+      </p>
+
+      <h3>
+        ¿Tener anticuerpos elevados significa que
+        mis síntomas se deben a la autoinmunidad?
+      </h3>
+
+      <p>
+        No necesariamente. Los anticuerpos ayudan
+        a caracterizar la enfermedad autoinmune,
+        pero sus valores no permiten establecer
+        por sí solos la causa de síntomas como
+        fatiga o dificultades cognitivas.
+      </p>
+
+      <h3>
+        ¿Tengo que dejar el gluten o seguir
+        una dieta especial?
+      </h3>
+
+      <p>
+        No de manera sistemática. Las recomendaciones
+        nutricionales se individualizan según los
+        antecedentes, la evaluación clínica y la
+        evidencia disponible. Una dieta sin gluten
+        tiene indicaciones específicas, como la
+        enfermedad celíaca.
+      </p>
+
+      <h3>
+        ¿La consulta implica ingresar al programa PNIE?
+      </h3>
+
+      <p>
+        No. La consulta especializada es independiente.
+        El programa se considera solamente cuando
+        resulta apropiado según la evaluación clínica
+        y las preferencias del paciente.
+      </p>
+
+      <h3>
+        ¿Tengo que suspender o modificar
+        la levotiroxina?
+      </h3>
+
+      <p>
+        No. Cualquier modificación del tratamiento
+        hormonal se considera únicamente cuando
+        existe una indicación médica individual.
+        El objetivo no es suspender medicación
+        innecesariamente.
+      </p>
+
+      <h3>
+        ¿Necesito experiencia previa en mindfulness
+        para participar en el programa?
+      </h3>
+
+      <p>
+        No, si el programa resulta adecuado para vos.
+        La práctica se enseña de manera progresiva
+        y se adapta a la experiencia individual.
+      </p>
+
+      <h3>
+        ¿Qué conviene llevar a la primera consulta?
+      </h3>
+
+      <p>
+        Estudios tiroideos anteriores, ecografías
+        disponibles, análisis relacionados con
+        los síntomas y un listado de la medicación
+        y suplementos que utilizás.
+      </p>
+
     </section>
+
+
+    <!-- CTA FINAL -->
 
     <section class="cta">
-      <a class="button" href="https://wa.me/5491164551615?text=Hola%2C%20quisiera%20solicitar%20una%20consulta%20por%20Hashimoto%20y%20s%C3%ADntomas%20persistentes." target="_blank" rel="noopener noreferrer">SOLICITAR TURNO</a>
+
+      <h2>Solicitar consulta especializada</h2>
+
+      <p>
+        Si tenés Hashimoto y continuás con síntomas,
+        podés solicitar una evaluación endocrinológica
+        individualizada para investigar posibles
+        factores contribuyentes y definir
+        los próximos pasos.
+      </p>
+
+      <a
+        class="button"
+        href="https://wa.me/5491164551615?text=Hola%2C%20quisiera%20solicitar%20una%20consulta%20por%20Hashimoto%20y%20s%C3%ADntomas%20persistentes."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        SOLICITAR TURNO
+      </a>
+
     </section>
+
   </main>
 
-  <footer>© 2026 Dr. Franco Tennina · Todos los derechos reservados</footer>
+  <footer>
+    © 2026 Dr. Franco Tennina · Todos los derechos reservados
+  </footer>
+
 </body>
 </html>
